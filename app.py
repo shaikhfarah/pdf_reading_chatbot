@@ -17,7 +17,7 @@ load_dotenv()
 GROQ_API_KEY = os.getenv("GROQ_API_KEY")
 
 # Streamlit config
-st.set_page_config(page_title="Groq PDF Chat", page_icon="📘", layout="wide")
+st.set_page_config(page_title="PDF Chatbot", page_icon="📘", layout="wide")
 
 # Custom LLM class for Groq API
 class GroqLLM(LLM):
@@ -100,8 +100,9 @@ def answer_question(user_question):
 # 🚀 Streamlit App Main
 def main():
     with st.sidebar:
-        st.title("📘 Groq PDF Chatbot")
-        st.markdown("Powered by **Groq API** + LLaMA3 🦙")
+        st.title("📘 PDF Chatbot 🤖")
+        st.markdown("Powered by **Groq API** + LLaMA3 🚀")
+        st.markdown("👩‍💻 Built by **Farah Shaikh** ✨")
         pdf_docs = st.file_uploader("Upload PDFs", accept_multiple_files=True)
         if st.button("Submit & Process"):
             if pdf_docs:
