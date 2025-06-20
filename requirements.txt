@@ -1,0 +1,11 @@
+streamlit
+python-dotenv
+PyPDF2
+langchain>=0.1.14
+langchain-core>=0.1.48
+langchain-community>=0.0.26
+langchainhub
+sentence-transformers
+faiss-cpu
+requests
+pydantic<2.0  # compatibility with langchain
